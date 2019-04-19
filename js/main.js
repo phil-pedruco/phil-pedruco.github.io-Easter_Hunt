@@ -32,7 +32,7 @@ function clue_two() {
 }
 
 function clue_three() {
-  var x = document.getElementById("myText").value;
+  var x = document.getElementById("clue_three_text").value;
     if (x == 'ZSAS') {
     	sleep(500)
     	document.getElementById("clue_three_response").innerHTML = 'The correct code has been entered';
@@ -54,13 +54,13 @@ function clue_four() {
 }
 
 function clue_five_yes() {
-  document.getElementById("clue_four_yes_no").innerHTML = 'Good choice';
+  document.getElementById("clue_five_yes_no").innerHTML = 'Good choice';
   sleep(500)
   location.replace("clue_five.html")//window.location.href = "clue_one.html";
 }
 
 function clue_five_no() {
-  document.getElementById("clue_four_yes_no").innerHTML = 'Are you sure? Remember the more clues you get right, the more eggs you get.';
+  document.getElementById("clue_five_yes_no").innerHTML = 'Are you sure? Remember the more clues you get right, the more eggs you get.';
   sleep(500)
 }
 
