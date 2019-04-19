@@ -35,10 +35,10 @@ function clue_three() {
   var x = document.getElementById("myText").value;
     if (x == 'ZSAS') {
     	sleep(500)
-    	document.getElementById("demo").innerHTML = 'The correct code has been entered';
+    	document.getElementById("clue_three_response").innerHTML = 'The correct code has been entered';
     	location.replace("clue_three.html")//window.location.href = "clue_one.html";
   	} else {
-    	document.getElementById("demo").innerHTML = 'I couldn&apost read it either, just enter ZSAS';
+    	document.getElementById("clue_three_response").innerHTML = 'I couldn&apost read it either, just enter ZSAS';
   	}
 }
 
