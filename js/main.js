@@ -10,24 +10,24 @@ function sleep(milliseconds) {
 }
 
 function clue_one() {
-  var x = document.getElementById("myText").value;
+  var x = document.getElementById("clue_one_text").value;
     if (x == 'The_Easter_Hunt') {
     	sleep(500)
-    	document.getElementById("demo").innerHTML = 'The correct code has been entered';
+    	document.getElementById("clue_one_response").innerHTML = 'The correct code has been entered';
     	location.replace("clue_one.html")//window.location.href = "clue_one.html";
   	} else {
-    	document.getElementById("demo").innerHTML = 'You might want to try again';
+    	document.getElementById("clue_one_response").innerHTML = 'You might want to try again';
   	}
 }
 
 function clue_two() {
-  var x = document.getElementById("myText").value;
+  var x = document.getElementById("clue_two_text").value;
     if (x == '150m') {
     	sleep(500)
-    	document.getElementById("demo").innerHTML = 'The correct code has been entered';
+    	document.getElementById("clue_two_response").innerHTML = 'The correct code has been entered';
     	location.replace("clue_two.html")//window.location.href = "clue_one.html";
   	} else {
-    	document.getElementById("demo").innerHTML = 'You might want to try again';
+    	document.getElementById("clue_two_response").innerHTML = 'You might want to try again';
   	}
 }
 
@@ -51,6 +51,28 @@ function clue_four() {
   	} else {
     	document.getElementById("clue_four_response").innerHTML = 'Best try again';
   	}
+}
+
+function clue_five_yes() {
+  document.getElementById("clue_four_yes_no").innerHTML = 'Good choice';
+  sleep(500)
+  location.replace("clue_five.html")//window.location.href = "clue_one.html";
+}
+
+function clue_five_no() {
+  document.getElementById("clue_four_yes_no").innerHTML = 'Are you sure? Remember the more clues you get right, the more eggs you get.';
+  sleep(500)
+}
+
+function clue_six() {
+  var x = document.getElementById("clue_six_text").value;
+    if (x == 'Bouncer') {
+      sleep(500)
+      document.getElementById("clue_six_response").innerHTML = 'The correct code has been entered';
+      location.replace("clue_six.html")//window.location.href = "clue_one.html";
+    } else {
+      document.getElementById("clue_six_response").innerHTML = 'Best try again';
+    }
 }
 
 /*function myMap() {
