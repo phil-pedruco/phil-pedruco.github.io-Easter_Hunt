@@ -66,7 +66,7 @@ function clue_five_no() {
 
 function clue_six() {
   var x = document.getElementById("clue_six_text").value;
-    if (x == 'Bouncer') {
+    if (x == 'Rabbit_Eggs') {
       sleep(500)
       document.getElementById("clue_six_response").innerHTML = 'The correct code has been entered';
       location.replace("clue_six.html")//window.location.href = "clue_one.html";
